@@ -1,0 +1,25 @@
+//mixins
+$sans: "filson-pro", sans-serif;
+$mono: "hack", mono;
+$serif: "Bagnard Web", serif;
+
+//setting up structure
+body {
+  @extend .container-fluid;
+  font-family: $sans;
+}
+
+.content-wrapper {
+  @extend .col-xs-12;
+}
+
+
+//navigation
+.main-nav {
+  @extend .container-fluid;
+  font-family: $mono;
+  list-style: none;
+  .brand {
+    font-family: $serif;
+  }
+}

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--><html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
 <head>
     <meta charset="{{site.charset}}" />
-        <title>   
+        <title>
             {% if wp_title %}
                 {{ wp_title }} - {{ site.name }}
             {% else %}
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="{{site.pingback_url}}" />
     <style>
-      
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script>
@@ -26,4 +26,7 @@
       // loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
     loadCSS("{{ theme.link }}/assets/dist/css/application.min.css?v=2016.9.22");
     </script>
+    <!--Importing Typekit-->
+    <script src="https://use.typekit.net/xio3obw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     {{function('wp_head')}}

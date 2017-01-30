@@ -1,6 +1,7 @@
 {% block site_nav %}
 <nav>
   <ul class="main-nav">
+    <li class="brand">k.d.</li>
     {% for item in menu.get_items %}
         <li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_link}}">{{item.title}}</a>
           {% if item.get_children %}

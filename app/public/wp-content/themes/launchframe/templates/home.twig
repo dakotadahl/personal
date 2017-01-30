@@ -1,14 +1,17 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.title}}</h1>
-				<div class="article-body">
-					{{post.content}}
-				</div>
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
+	<div class="content-wrapper col-md-10 offset-md-1 col-xs-12">
+		<h1>Hi, I'm Kody. I'm a designer & sometime photographer currently making things with the growing family of good people at Whiteboard in Chattanooga, Tennessee.</h1>
+		<h5>currently working on <span class="serif"><a href="#">Whiteboard.is</a>, <a href="#">CreativeMornings Chattanooga</a></span> </h5>
+		<hr />
+	</div>
+
+	<div class="content-wrapper col-md-10 offset-md-1 col-xs-12">
+		{% for post in posts %}
+			{% include ['tease-'~post.post_type~'.twig', 'tease.twig',] %}
+		{% endfor %}
+	</div>
+	<a href="#" class="more">+++</a>
+	<!-- /content-wrapper -->
 {% endblock %}
