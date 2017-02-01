@@ -641,26 +641,26 @@ pre {
       width: 1140px;
       max-width: 100%; } }
 
-.container-fluid, body, .main-nav {
+.container-fluid, body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px; }
   @media (min-width: 576px) {
-    .container-fluid, body, .main-nav {
+    .container-fluid, body {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .container-fluid, body, .main-nav {
+    .container-fluid, body {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 992px) {
-    .container-fluid, body, .main-nav {
+    .container-fluid, body {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 1200px) {
-    .container-fluid, body, .main-nav {
+    .container-fluid, body {
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -7279,13 +7279,128 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     margin-bottom: 12rem; } }
 
 body {
-  font-family: "filson-pro", sans-serif; }
+  font-family: "filson-pro", sans-serif;
+  font-size: 16px;
+  color: #324054;
+  background-color: #FEFAF9; }
+
+.serif {
+  font-family: "Bagnard Web", serif; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+          transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
+  a:hover {
+    color: #FEFAF9;
+    text-decoration: none;
+    background-color: #324054; }
+
+.h2 {
+  font-family: "filson-pro", sans-serif;
+  font-size: 32px;
+  line-height: 1.4375rem; }
+
+.h4 {
+  font-size: 1.2rem;
+  font-weight: 500; }
+
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .125rem;
+  color: #324054;
+  text-transform: uppercase; }
 
 .main-nav {
   font-family: "hack", mono;
-  list-style: none; }
+  list-style: none;
+  position: fixed; }
   .main-nav .brand {
-    font-family: "Bagnard Web", serif; }
+    position: fixed;
+    top: 1rem;
+    left: 1.3rem;
+    font-family: "Bagnard Web", serif;
+    font-size: 1.2rem; }
+  .main-nav.right {
+    position: fixed;
+    top: 1rem;
+    right: 3.2rem; }
+    .main-nav.right .nav-main-item {
+      margin-left: 1.2rem;
+      list-style: none; }
+
+.hero {
+  margin-top: 40vh; }
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.435em; }
+    .hero h1 a {
+      font-weight: 700; }
+  .hero h5 {
+    width: 95%;
+    overflow: scroll;
+    white-space: nowrap;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 4rem 0 2.75rem 0; }
+    .hero h5 .serif {
+      font-size: 1.1rem;
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 400; }
+
+.home-feed {
+  margin-top: 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .home-feed a:hover {
+    color: #8DB8ED; }
+  .home-feed h5 {
+    font-size: 0.875rem;
+    letter-spacing: 0.03125rem;
+    font-family: "hack", mono;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: .2rem; }
+  .home-feed h4 {
+    margin-top: .3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.44em; }
+  .home-feed .more {
+    font-size: 1.3rem;
+    background-color: #FEFAF9;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+    border-radius: 0;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-transform: translatey(50%);
+            transform: translatey(50%); }
+    .home-feed .more .plus {
+      opacity: visibility; }
+    .home-feed .more .label {
+      font-size: 1rem;
+      letter-spacing: 0.03125rem;
+      font-family: "hack", mono;
+      font-weight: 400;
+      -webkit-transform: translatey(0.3rem);
+              transform: translatey(0.3rem);
+      text-transform: uppercase;
+      opacity: 0;
+      visibility: hidden; }
+    .home-feed .more:hover .plus {
+      opacity: 0;
+      visibility: hidden; }
+    .home-feed .more:hover .label {
+      opacity: 1;
+      visibility: hidden;
+      color: #324054; }
 
 @font-face {
   font-family: 'Bagnard Web';

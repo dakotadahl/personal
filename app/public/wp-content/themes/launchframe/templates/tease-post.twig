@@ -1,6 +1,9 @@
 {% extends "tease.twig" %}
 
 {% block content %}
-	<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
-		<p>{{post.get_preview(35)}}</p>
+<a href="{{post.link}}">
+	<h5 class="h5">{{ post.post_date|date('F j') }}</h5>
+	<h4 class="h4">{{post.title}}</h4>
+</a>
+		<!--p>{{post.preview}}</p-->
 {% endblock %}
