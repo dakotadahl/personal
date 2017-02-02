@@ -1,5 +1,5 @@
 //mixins
-$sans: "filson-pro", sans-serif;
+$sans: "ff-basic-gothic-web-pro", sans-serif;
 $mono: "hack", mono;
 $serif: "Bagnard Web", serif;
 
@@ -22,36 +22,28 @@ body {
   font-family: $serif;
 }
 
+.sans {
+  font-family: $sans;
+}
+
+.mono {
+  font-family: $mono;
+}
+
+p {
+  font-size: 1.24rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
   transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
   &:hover {
-    color: $white;
+    //color: $white;
     text-decoration: none;
-    background-color: $primary;
+    //background-color: $primary;
   }
 }
-
-.h2 {
-  font-family: $sans;
-  font-size: 32px;
-  line-height: 1.4375rem;
-}
-
-.h4 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: .125rem;
-  color: $primary;
-  text-transform: uppercase;
-}
-
 //navigation
 .main-nav {
   font-family: $mono;
@@ -109,27 +101,9 @@ h5 {
 .home-feed {
   margin-top: 1.25rem;
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  a {
-    &:hover {
-      color: $secondary;
-    }
-  }
-  h5 {
-    font-size: 0.875rem;
-    letter-spacing: 0.03125rem;
-    font-family: $mono;
-    font-weight: 400;
-    text-transform: none;
-    margin-bottom: .2rem;
-  }
-  h4 {
-    margin-top: .3rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.44em;
-  }
   .more {
-    font-size: 1.3rem;
-    background-color: $white;
+    font-size: 1.2rem;
+    background-color: $secondary;
     padding: .5rem 1rem;
     box-sizing: border-box;
     border-radius: 0;
@@ -137,29 +111,5 @@ h5 {
     text-align: center;
     margin: 0 auto;
     transform: translatey(50%);
-    .plus {
-      opacity: visibility;
-    }
-    .label {
-      font-size: 1rem;
-      letter-spacing: 0.03125rem;
-      font-family: $mono;
-      font-weight: 400;
-      transform: translatey(.3rem);
-      text-transform: uppercase;
-      opacity: 0;
-      visibility: hidden;
-    }
-    &:hover {
-      .plus {
-        opacity: 0;
-        visibility: hidden;
-      }
-      .label {
-        opacity: 1;
-        visibility: hidden;
-        color: $primary;
-      }
-    }
   }
 }

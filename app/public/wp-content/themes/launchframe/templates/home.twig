@@ -1,18 +1,18 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="container-fluid">
+	<!--div class="container-fluid">
 		<div class="hero content-wrapper row col-lg-8 offset-lg-2">
-			<h1>👋, I'm Kody. I'm a <a href="#">designer</a> & sometime <a href="#">photographer</a> currently making things with the growing family of good people at <a href="#">Whiteboard</a> in Chattanooga, Tennessee.</h1>
-			<h5>working on: <span class="serif"><a href="#">Whiteboard.is</a> / <a href="#">CreativeMornings Chattanooga</a> / <a href="#">Nearly Racing</a></span></h5>
+			<h1 class="h1">👋, I'm Kody. I'm a <a href="#">designer</a> & sometime <a href="#">photographer</a> currently making things with the growing family of good people at <a href="#">Whiteboard</a> in Chattanooga, Tennessee.</h1>
+			<h5 class="col-lg-12">working on: <span class="serif"><a href="#">Whiteboard.is</a> / <a href="#">CreativeMornings Chattanooga</a> / <a href="#">Nearly Racing</a></span></h5>
 
-		</div>
+		</div-->
 
-		<div class="home-feed content-wrapper row col-md-8 offset-lg-2">
+		<div class="home-feed content-wrapper row col-lg-6 offset-lg-3 vp-lg-top-12">
 			{% for post in posts %}
 				{% include ['tease-'~post.post_type~'.twig', 'tease.twig',] %}
 			{% endfor %}
-		<a href="#" class="more row">+<span class="plus">+</span><span class="label">More</span>+</a>
+		<!--a href="#" class="more row"><span>+</span><span>+</span><span>+</span></a-->
 		</div>
 	</div>
 	<!-- /content-wrapper -->
