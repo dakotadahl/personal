@@ -7304,7 +7304,9 @@ a {
   -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
           transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
   a:hover {
-    text-decoration: none; }
+    background-color: yellow;
+    text-decoration: none;
+    padding-right: 1.4rem; }
 
 .h3 {
   font-family: "Space Mono", mono;
@@ -7330,6 +7332,16 @@ a {
     font-family: "Space Mono", mono;
     font-size: 1.2rem;
     text-align: center; }
+  .main-nav.left {
+    position: fixed;
+    top: 1.64rem;
+    left: 0.25rem; }
+    .main-nav.left a {
+      margin-left: none;
+      width: 1.25rem;
+      height: 1.25rem;
+      background-image: url("../../src/img/camera.svg");
+      background-size: cover; }
   .main-nav.right {
     position: fixed;
     top: 1.44rem;
@@ -7345,8 +7357,12 @@ a {
     .footer .social a {
       font-family: "Space Mono", mono;
       font-size: 0.875rem;
-      padding-right: 2.4rem;
-      display: inline-block; }
+      margin-right: 2.4rem;
+      display: inline-block;
+      -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+              transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
+      .footer .social a:hover {
+        padding-right: 1.4rem; }
   .footer .easter {
     right: 1rem;
     position: absolute;
