@@ -32,62 +32,60 @@ body {
 }
 
 p {
+  font-family: $sans;
   font-size: 1.125rem;
   line-height: 1.74rem;
-  font-family: $sans;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
   border-bottom: 2px solid transparent;
-  transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+  transition: all .2s cubic-bezier(.58, .18, .45, 1.29);
   &:hover {
     color: $primary;
     text-decoration: none;
     border-bottom: 2px solid $highlight;
-    //background-color: $primary;
   }
 }
 
-.h1 {}
-.h2 {}
 .h3 {
   font-family: $mono;
   font-size: 1.125rem;
+  font-weight: bold;
   line-height: 1.77rem;
   color: $primary;
-  font-weight: bold;
 }
-.h4 {}
 .h5 {
   font-family: $metamono;
-  font-size: 0.625rem;
+  font-size: .625rem;
+  letter-spacing: .2083333125rem;
   text-transform: uppercase;
-  letter-spacing: 0.2083333125rem;
 }
 
 
 //navigation
 .main-nav {
-  font-family: $mono;
-  list-style: none;
   position: fixed;
   top: 1.375rem;
   z-index: 10;
+  font-family: $mono;
+  list-style: none;
   .brand {
     top: 1.44rem;
-    padding: 1.2rem 1rem 1rem 1rem;
-    transform: translatex(42vw);
+    padding: 1.2rem 1rem 1rem;
     font-family: $mono;
     font-size: 1.2rem;
     text-align: center;
     border-bottom: 2px solid transparent;
-    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
-    a { border-bottom: 2px solid transparent; }
+    transform: translatex(42vw);
+    transition: all .2s cubic-bezier(.58, .18, .45, 1.29);
+    a {
+      border-bottom: 2px solid transparent;
+    }
     span {
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
     .visible-letter {
       display: inline-block;
@@ -104,19 +102,19 @@ a {
       transition-delay: .2s;
     }
     &:hover {
-      padding: 1.2rem 2rem 1.2rem 2rem;
+      padding: 1.2rem 1rem 1rem;
       background-color: $grey;
       border-bottom: 2px solid transparent;
       transform: translatex(41.5vw);
-      transition: all .1s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+      transition: all .1s cubic-bezier(.58, .18, .45, 1.29);
       .period {
         width: 0;
         opacity: 0;
         transition-delay: 0;
       }
       .invisible-letter {
-        opacity: 1;
         width: auto;
+        opacity: 1;
         transition-delay: 0;
       }
     }
@@ -126,13 +124,13 @@ a {
     top: 1.64rem;
     left: 1.44rem;
     a {
-      margin-left: none;
       width: 2.625rem;
       height: 2.625rem;
-      background-image: url('../../src/img/camera.svg');
-      background-size: 50%;
-      background-repeat: no-repeat;
+      margin-left: none;
+      background-image: url("../../src/img/camera.svg");
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
     }
   }
   &.right {
@@ -149,50 +147,68 @@ a {
 .single-post {
   nav {
     @extend .col-lg-6;
+    @extend .col-md-6;
+    @extend .col-sm-10;
     @extend .offset-lg-3;
     position: fixed;
+    top: .44rem;
+    z-index: 10;
     height: 2.625rem;
-    top: 3rem;
-    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.05);
     background-color: $white;
     border-radius: 2px;
-    z-index: 10;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
     .main-nav {
-      top: 0;
       position: absolute;
+      top: 0;
       &.left {
         top: 0;
-        left: 1rem;
         padding: 0;
         a {
+          position: absolute;
           padding: 1rem;
-          display: block;
           &:hover {
-            background-color: $highlight;
             cursor: pointer;
+            background-color: $highlight;
           }
         }
       }
       &.right {
-        top: .6rem;
-        right: 2.2rem;
+        top: 2.6rem;
       }
       .brand {
         position: relative;
         top: .25rem;
-        transform: translatex(18vw);
-        padding: .2rem 1rem .1rem 1rem;
+        transform: translatex(26vw);
+        padding: .2rem 1rem .1rem;
         &:hover {
           transform: translatex(17vw);
         }
       }
     }
+    @media (min-width: 768px) {
+      top: 3rem;
+      .main-nav {
+        &.left {
+          left: 1rem;
+        }
+        &.right {
+          top: .6rem;
+          right: 2.2rem;
+        }
+        .brand {
+          transform: translatex(18vw);
+        }
+      }
+    }
   }
   .featured-image {
-    min-height: 75vh;
-    background-size: cover;
+    min-height: 54vh;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 768px) {
+      min-height: 75vh;
+    }
   }
   .article-content {
     border-bottom: 1px solid $grey;
@@ -204,24 +220,20 @@ a {
 
 .back-link {
   a {
-    &:hover {
-      border-bottom: 2px solid $highlight;
-    }
-  }
-  a .h3 {
+    position: relative;
     display: inline-block;
     font-family: $sans;
     font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.44rem;
     color: lighten($primary, 30%);
-    opacity: 0.5;
-    position: relative;
-    line-height: 1.44rem;;
     border-bottom: 2px solid $grey;
-    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+    opacity: .5;
+    transition: all .2s cubic-bezier(.58, .18, .45, 1.29);
     &:hover {
-      opacity: 1;
       color: $primary;
       border-bottom: 2px solid transparent;
+      opacity: 1;
     }
   }
 }
@@ -232,21 +244,18 @@ a {
   .social {
     padding-left: 1rem;
     a {
-      font-family: $mono;
-      font-size: 0.875rem;
-      margin-right: 2.4rem;
-      padding: .4rem .4rem;
       display: inline-block;
-      transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
-      &:hover {
-
-      }
+      padding: .4rem;
+      margin-right: 2.4rem;
+      font-family: $mono;
+      font-size: .875rem;
+      transition: all .2s cubic-bezier(.58, .18, .45, 1.29);
     }
   }
   .easter {
+    position: absolute;
     right: 2rem;
     line-height: 2rem;
-    position: absolute;
     text-align: right;
   }
 }
@@ -254,7 +263,7 @@ a {
 //home posts
 .home-feed {
   margin-top: 22rem;
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .tease {
@@ -267,21 +276,21 @@ a {
   }
   p {
     padding-bottom: 1.25rem;
-    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+    transition: all .2s cubic-bezier(.58, .18, .45, 1.29);
   }
   .read-link {
-    font-size: 1.1rem;
-    margin-left: .22rem;
-    color: lighten($primary, 30%);
-    opacity: 0.5;
     position: relative;
+    margin-left: .22rem;
+    font-size: 1.1rem;
     line-height: 1.44rem;
+    color: lighten($primary, 30%);
     border-bottom: 2px solid $grey;
-    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+    opacity: .5;
+    transition: all .2s cubic-bezier(.58, .18, .45, 1.29);
     &:hover {
-      opacity: 1;
       color: $primary;
       border-bottom: 2px solid $highlight;
+      opacity: 1;
     }
   }
 }

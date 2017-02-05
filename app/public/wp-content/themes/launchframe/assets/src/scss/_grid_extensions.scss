@@ -1,6 +1,6 @@
 .no-gutter {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 @each $breakpoint, $breakpoint-def in $grid-breakpoints {
   @media only screen and (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
@@ -15,8 +15,8 @@
       padding-right: 0;
     }
     .no-gutter-#{$breakpoint} {
-      padding-left: 0;
       padding-right: 0;
+      padding-left: 0;
     }
 
     // Grid scaffold
