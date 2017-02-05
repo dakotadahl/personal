@@ -73,11 +73,12 @@ a {
   font-family: $mono;
   list-style: none;
   position: fixed;
+  top: 1.375rem;
   z-index: 10;
   .brand {
     top: 1.44rem;
     padding: 1.2rem 1rem 1rem 1rem;
-    transform: translatex(45vw);
+    transform: translatex(42vw);
     font-family: $mono;
     font-size: 1.2rem;
     text-align: center;
@@ -106,7 +107,7 @@ a {
       padding: 1.2rem 2rem 1.2rem 2rem;
       background-color: $grey;
       border-bottom: 2px solid transparent;
-      transform: translatex(43.5vw);
+      transform: translatex(41.5vw);
       transition: all .1s cubic-bezier(0.58, 0.18, 0.45, 1.29);
       .period {
         width: 0;
@@ -122,15 +123,16 @@ a {
   }
   &.left {
     position: fixed;
-    top: 2.64rem;
-    left: 1.25rem;
-    padding: 0 2rem;
+    top: 1.64rem;
+    left: 1.44rem;
     a {
       margin-left: none;
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 2.625rem;
+      height: 2.625rem;
       background-image: url('../../src/img/camera.svg');
-      background-size: cover;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
   &.right {
@@ -146,25 +148,43 @@ a {
 
 .single-post {
   nav {
-    display: none;
-    @extend .col-lg-8;
-    @extend .offset-lg-2;
+    @extend .col-lg-6;
+    @extend .offset-lg-3;
     position: fixed;
-    top: 3rem;
     height: 2.625rem;
-    background-color: $primary;
+    top: 3rem;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.05);
+    background-color: $white;
+    border-radius: 2px;
+    z-index: 10;
     .main-nav {
+      top: 0;
+      position: absolute;
       &.left {
-        @extend .col-lg-2;
-        position: relative;
-      }
-      &.brand {
-        @extend .col-lg-2;
-        position: relative;
+        top: 0;
+        left: 1rem;
+        padding: 0;
+        a {
+          padding: 1rem;
+          display: block;
+          &:hover {
+            background-color: $highlight;
+            cursor: pointer;
+          }
+        }
       }
       &.right {
-        @extend .col-lg-2;
+        top: .6rem;
+        right: 2.2rem;
+      }
+      .brand {
         position: relative;
+        top: .25rem;
+        transform: translatex(18vw);
+        padding: .2rem 1rem .1rem 1rem;
+        &:hover {
+          transform: translatex(17vw);
+        }
       }
     }
   }
@@ -178,6 +198,30 @@ a {
     border-bottom: 1px solid $grey;
     .article-h1 {
       padding-bottom: 1.125rem;
+    }
+  }
+}
+
+.back-link {
+  a {
+    &:hover {
+      border-bottom: 2px solid $highlight;
+    }
+  }
+  a .h3 {
+    display: inline-block;
+    font-family: $sans;
+    font-size: 1.1rem;
+    color: lighten($primary, 30%);
+    opacity: 0.5;
+    position: relative;
+    line-height: 1.44rem;;
+    border-bottom: 2px solid $grey;
+    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+    &:hover {
+      opacity: 1;
+      color: $primary;
+      border-bottom: 2px solid transparent;
     }
   }
 }
