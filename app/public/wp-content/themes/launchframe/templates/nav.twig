@@ -1,13 +1,18 @@
 {% block site_nav %}
 <nav class="container-fluid">
-  <ul class="row main-nav">
-    <li class="brand">k.d.is</li>
-  </ul>
-  <ul class="row main-nav right">
-  {% for item in menu.get_items %}
-    <li class="nav-main-item{{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_link}}">{{item.title}}</a></li>
-  {% endfor %}
-  </ul>
+  <div class="row">
+    <ul class="main-nav left">
+      <a href="#"></a>
+    </ul>
+    <ul class="main-nav">
+      <li class="brand"><a href="{{ site.url }}">k.d.is</a></li>
+    </ul>
+    <ul class="main-nav right">
+    {% for item in menu.get_items %}
+      <li class="nav-main-item{{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_link}}">{{item.title}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
 </div>
 </nav>
 {% endblock %}

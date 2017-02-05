@@ -1,7 +1,7 @@
 //mixins
-$sans: "ff-basic-gothic-web-pro", sans-serif;
-$mono: "hack", mono;
-$serif: "Bagnard Web", serif;
+$sans: "ff-tisa-sans-web-pro", sans-serif;
+$mono: "Space Mono", mono;
+$metamono: "hack", mono;
 
 $primary: #324054;
 $secondary: #8DB8ED;
@@ -18,10 +18,6 @@ body {
 }
 
 //base styles
-.serif {
-  font-family: $serif;
-}
-
 .sans {
   font-family: $sans;
 }
@@ -30,8 +26,14 @@ body {
   font-family: $mono;
 }
 
+.meta {
+  font-family: $metamono;
+}
+
 p {
-  font-size: 1.24rem;
+  font-size: 1.125rem;
+  line-height: 1.74rem;
+  font-family: $sans;
 }
 
 a {
@@ -44,21 +46,40 @@ a {
     //background-color: $primary;
   }
 }
+
+.h1 {}
+.h2 {}
+.h3 {
+  font-family: $mono;
+  font-size: 1.125rem;
+  line-height: 1.77rem;
+  color: $primary;
+  font-weight: bold;
+}
+.h4 {}
+.h5 {
+  font-family: $metamono;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2083333125rem;
+}
+
+
 //navigation
 .main-nav {
   font-family: $mono;
   list-style: none;
   position: fixed;
   .brand {
-    position: fixed;
-    top: 1rem;
-    left: 1.3rem;
-    font-family: $serif;
+    top: 1.44rem;
+    transform: translatex(46vw);
+    font-family: $mono;
     font-size: 1.2rem;
+    text-align: center;
   }
   &.right {
     position: fixed;
-    top: 1rem;
+    top: 1.44rem;
     right: 3.2rem;
     .nav-main-item {
       margin-left: 1.2rem;
@@ -67,49 +88,47 @@ a {
   }
 }
 
-//lead-in paragraph
-.hero {
-  margin-top: 40vh;
-  h1 {
-    font-size: 2rem;
-    line-height: 1.435em;
+//footer {
+.footer {
+  border-top: 1px solid $grey;
+  .social {
+    padding-left: 1rem;
     a {
-      font-weight: 700;
+      font-family: $mono;
+      font-size: 0.875rem;
+      padding-right: 2.4rem;
+      display: inline-block;
     }
   }
-  h5 {
-    width: 95%;
-    overflow: scroll;
-    white-space: nowrap;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    font-size: .9rem;
-    text-transform: uppercase;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin: 4rem 0 2.75rem 0;
-    .serif {
-      font-size: 1.1rem;
-      text-transform: none;
-      letter-spacing: 0;
-      font-weight: 400;
-    }
+  .easter {
+    right: 1rem;
+    position: absolute;
+    text-align: right;
   }
 }
 
 //home posts
 .home-feed {
-  margin-top: 1.25rem;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  .more {
-    font-size: 1.2rem;
-    background-color: $secondary;
-    padding: .5rem 1rem;
-    box-sizing: border-box;
-    border-radius: 0;
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    transform: translatey(50%);
+  margin-top: 22rem;
+  border-bottom: none;
+}
+
+.tease {
+  display: block;
+  .h3 {
+    padding-bottom: .5rem;
+  }
+  p {
+    padding-bottom: 1.25rem;
+    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+  }
+  &:hover {
+
+  }
+  .read-link {
+    transition: ease-in-out;
+    &:hover {
+      background-color: yellow;
+    }
   }
 }

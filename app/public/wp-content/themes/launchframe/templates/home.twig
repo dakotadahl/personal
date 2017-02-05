@@ -8,7 +8,7 @@
 
 		</div-->
 
-		<div class="home-feed content-wrapper row col-lg-6 offset-lg-3 vp-lg-top-12">
+		<div class="home-feed content-wrapper row col-lg-6 offset-lg-3">
 			{% for post in posts %}
 				{% include ['tease-'~post.post_type~'.twig', 'tease.twig',] %}
 			{% endfor %}

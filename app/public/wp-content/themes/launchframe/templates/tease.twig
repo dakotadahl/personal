@@ -1,6 +1,6 @@
 <article class="col-lg-12 vp-lg-bottom-3 tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
 	{% block content %}
-		<h2 class="h3"><a href="{{post.link}}">{{post.title}}</a></h2>
+		<h2 class="h3"><a href="{{post.link}}">{{post.title}}</a></h3>
 		<p>{{post.get_preview}}</p>
 		{% if post.get_thumbnail %}
 			<img src="{{post.thumbnail.src}}" />

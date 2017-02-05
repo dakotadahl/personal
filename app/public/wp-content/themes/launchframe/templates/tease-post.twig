@@ -1,10 +1,11 @@
 {% extends "tease.twig" %}
 
 {% block content %}
-<a class="row" href="{{post.link}}">
-	<h5 class="h5 col-lg-12">{{ post.post_date|date('F j') }}</h5>
+<div class="row vp-lg-bottom-8">
 	<h2 class="h3 col-lg-12">{{post.title}}</h2>
-	<p class="col-lg-12">{{post.preview}}</p>
-</a>
+	<p class="col-lg-12">{{post.post_content|excerpt(47)}}</p>
+	<h5 class="h5 col-lg-4">{{ post.post_date|date('F j Y') }}</h5>
+	<a class="h5 read-link col-lg-8" href="{{post.link}}">Read</a>
+</div>
 		<!--p>{{post.preview}}</p-->
 {% endblock %}

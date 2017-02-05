@@ -183,3 +183,30 @@ InnoDB: buffer...
 170201 23:21:35 [Note] Event Scheduler: Loaded 0 events
 170201 23:21:35 [Note] /usr/sbin/mysqld: ready for connections.
 Version: '5.5.49-0+deb8u1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Debian)
+170204 21:01:33 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+170204 21:01:33 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+170204 21:01:33 [Note] /usr/sbin/mysqld (mysqld 5.5.49-0+deb8u1) starting as process 431 ...
+170204 21:01:33 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+170204 21:01:33 [Note] Plugin 'FEDERATED' is disabled.
+170204 21:01:33 InnoDB: The InnoDB memory heap is disabled
+170204 21:01:33 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+170204 21:01:33 InnoDB: Compressed tables use zlib 1.2.8
+170204 21:01:33 InnoDB: Using Linux native AIO
+170204 21:01:33 InnoDB: Initializing buffer pool, size = 8.0M
+170204 21:01:33 InnoDB: Completed initialization of buffer pool
+170204 21:01:33 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+170204 21:01:33  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+170204 21:01:33  InnoDB: Waiting for the background threads to start
+170204 21:01:34 InnoDB: 5.5.49 started; log sequence number 6615191
+170204 21:01:34 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+170204 21:01:34 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+170204 21:01:34 [Note] Server socket created on IP: '0.0.0.0'.
+170204 21:01:34 [Note] Event Scheduler: Loaded 0 events
+170204 21:01:34 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.5.49-0+deb8u1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Debian)
