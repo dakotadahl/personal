@@ -1,10 +1,9 @@
-<article class="col-lg-12 vp-lg-bottom-3 tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
+<article class="vp-lg-bottom-7 tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
 	{% block content %}
-		<h2 class="h3"><a href="{{post.link}}">{{post.title}}</a></h3>
-		<p>{{post.get_preview}}</p>
-		{% if post.get_thumbnail %}
-			<img src="{{post.thumbnail.src}}" />
-		{% endif %}
+	<a href="{{post.link}}">
+		<h2 class="h3">{{post.title}}</h3>
+		<h5 class="h5">{{ post.post_date|date('F j Y') }}</h5>
+	</a>
 	{% endblock %}
 	</a>
 </article>

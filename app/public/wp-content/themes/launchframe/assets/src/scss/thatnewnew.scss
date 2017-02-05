@@ -7,6 +7,7 @@ $primary: #324054;
 $secondary: #8DB8ED;
 $grey: #D6D9DD;
 $white: #FEFAF9;
+$highlight: #EF3054;
 
 //setting up structure
 body {
@@ -39,11 +40,12 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  border-bottom: 2px solid transparent;
   transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
   &:hover {
-    background-color: yellow;
+    color: $primary;
     text-decoration: none;
-    padding-right: 1.4rem;
+    border-bottom: 2px solid $highlight;
     //background-color: $primary;
   }
 }
@@ -71,17 +73,58 @@ a {
   font-family: $mono;
   list-style: none;
   position: fixed;
+  z-index: 10;
   .brand {
     top: 1.44rem;
-    transform: translatex(46vw);
+    padding: 1.2rem 1rem 1rem 1rem;
+    transform: translatex(45vw);
     font-family: $mono;
     font-size: 1.2rem;
     text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+    a { border-bottom: 2px solid transparent; }
+    span {
+      margin: 0;
+      padding: 0;
+    }
+    .visible-letter {
+      display: inline-block;
+      transition-delay: none;
+    }
+    .period {
+      display: inline-block;
+      transition-delay: .1s;
+    }
+    .invisible-letter {
+      display: inline-block;
+      width: 0;
+      opacity: 0;
+      transition-delay: .2s;
+    }
+    &:hover {
+      padding: 1.2rem 2rem 1.2rem 2rem;
+      background-color: $grey;
+      border-bottom: 2px solid transparent;
+      transform: translatex(43.5vw);
+      transition: all .1s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+      .period {
+        width: 0;
+        opacity: 0;
+        transition-delay: 0;
+      }
+      .invisible-letter {
+        opacity: 1;
+        width: auto;
+        transition-delay: 0;
+      }
+    }
   }
   &.left {
     position: fixed;
-    top: 1.64rem;
-    left: 0.25rem;
+    top: 2.64rem;
+    left: 1.25rem;
+    padding: 0 2rem;
     a {
       margin-left: none;
       width: 1.25rem;
@@ -92,11 +135,49 @@ a {
   }
   &.right {
     position: fixed;
-    top: 1.44rem;
-    right: 3.2rem;
+    top: 2.44rem;
+    right: 4.2rem;
     .nav-main-item {
       margin-left: 1.2rem;
       list-style: none;
+    }
+  }
+}
+
+.single-post {
+  nav {
+    display: none;
+    @extend .col-lg-8;
+    @extend .offset-lg-2;
+    position: fixed;
+    top: 3rem;
+    height: 2.625rem;
+    background-color: $primary;
+    .main-nav {
+      &.left {
+        @extend .col-lg-2;
+        position: relative;
+      }
+      &.brand {
+        @extend .col-lg-2;
+        position: relative;
+      }
+      &.right {
+        @extend .col-lg-2;
+        position: relative;
+      }
+    }
+  }
+  .featured-image {
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .article-content {
+    border-bottom: 1px solid $grey;
+    .article-h1 {
+      padding-bottom: 1.125rem;
     }
   }
 }
@@ -110,16 +191,17 @@ a {
       font-family: $mono;
       font-size: 0.875rem;
       margin-right: 2.4rem;
+      padding: .4rem .4rem;
       display: inline-block;
       transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
       &:hover {
-        //transform: translatex(.4rem);
-        padding-right: 1.4rem;
+
       }
     }
   }
   .easter {
-    right: 1rem;
+    right: 2rem;
+    line-height: 2rem;
     position: absolute;
     text-align: right;
   }
@@ -136,17 +218,26 @@ a {
   .h3 {
     padding-bottom: .5rem;
   }
+  .h5 {
+    line-height: 1.44rem;
+  }
   p {
     padding-bottom: 1.25rem;
     transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
   }
-  &:hover {
-
-  }
   .read-link {
-    transition: ease-in-out;
+    font-size: 1.1rem;
+    margin-left: .22rem;
+    color: lighten($primary, 30%);
+    opacity: 0.5;
+    position: relative;
+    line-height: 1.44rem;
+    border-bottom: 2px solid $grey;
+    transition: all .2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
     &:hover {
-      background-color: yellow;
+      opacity: 1;
+      color: $primary;
+      border-bottom: 2px solid $highlight;
     }
   }
 }

@@ -697,26 +697,26 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .single-post nav .main-nav.left, .single-post nav .main-nav.brand, .single-post nav .main-nav.right, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .single-post nav, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
   @media (min-width: 576px) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .single-post nav .main-nav.left, .single-post nav .main-nav.brand, .single-post nav .main-nav.right, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .single-post nav, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .single-post nav .main-nav.left, .single-post nav .main-nav.brand, .single-post nav .main-nav.right, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .single-post nav, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 992px) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .single-post nav .main-nav.left, .single-post nav .main-nav.brand, .single-post nav .main-nav.right, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .single-post nav, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 1200px) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .single-post nav .main-nav.left, .single-post nav .main-nav.brand, .single-post nav .main-nav.right, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .single-post nav, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -1235,7 +1235,7 @@ pre {
         -ms-flex: 0 0 8.33333%;
             flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  .col-lg-2 {
+  .col-lg-2, .single-post nav .main-nav.left, .single-post nav .main-nav.brand, .single-post nav .main-nav.right {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
             flex: 0 0 16.66667%;
@@ -1265,7 +1265,7 @@ pre {
         -ms-flex: 0 0 58.33333%;
             flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  .col-lg-8 {
+  .col-lg-8, .single-post nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.66667%;
             flex: 0 0 66.66667%;
@@ -1346,7 +1346,7 @@ pre {
     margin-left: 0%; }
   .offset-lg-1 {
     margin-left: 8.33333%; }
-  .offset-lg-2 {
+  .offset-lg-2, .single-post nav {
     margin-left: 16.66667%; }
   .offset-lg-3 {
     margin-left: 25%; }
@@ -7301,12 +7301,13 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  border-bottom: 2px solid transparent;
   -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
           transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
   a:hover {
-    background-color: yellow;
+    color: #324054;
     text-decoration: none;
-    padding-right: 1.4rem; }
+    border-bottom: 2px solid #EF3054; }
 
 .h3 {
   font-family: "Space Mono", mono;
@@ -7324,18 +7325,61 @@ a {
 .main-nav {
   font-family: "Space Mono", mono;
   list-style: none;
-  position: fixed; }
+  position: fixed;
+  z-index: 10; }
   .main-nav .brand {
     top: 1.44rem;
-    -webkit-transform: translatex(46vw);
-            transform: translatex(46vw);
+    padding: 1.2rem 1rem 1rem 1rem;
+    -webkit-transform: translatex(45vw);
+            transform: translatex(45vw);
     font-family: "Space Mono", mono;
     font-size: 1.2rem;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+            transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
+    .main-nav .brand a {
+      border-bottom: 2px solid transparent; }
+    .main-nav .brand span {
+      margin: 0;
+      padding: 0; }
+    .main-nav .brand .visible-letter {
+      display: inline-block;
+      -webkit-transition-delay: none;
+              transition-delay: none; }
+    .main-nav .brand .period {
+      display: inline-block;
+      -webkit-transition-delay: .1s;
+              transition-delay: .1s; }
+    .main-nav .brand .invisible-letter {
+      display: inline-block;
+      width: 0;
+      opacity: 0;
+      -webkit-transition-delay: .2s;
+              transition-delay: .2s; }
+    .main-nav .brand:hover {
+      padding: 1.2rem 2rem 1.2rem 2rem;
+      background-color: #D6D9DD;
+      border-bottom: 2px solid transparent;
+      -webkit-transform: translatex(43.5vw);
+              transform: translatex(43.5vw);
+      -webkit-transition: all 0.1s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+              transition: all 0.1s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
+      .main-nav .brand:hover .period {
+        width: 0;
+        opacity: 0;
+        -webkit-transition-delay: 0;
+                transition-delay: 0; }
+      .main-nav .brand:hover .invisible-letter {
+        opacity: 1;
+        width: auto;
+        -webkit-transition-delay: 0;
+                transition-delay: 0; }
   .main-nav.left {
     position: fixed;
-    top: 1.64rem;
-    left: 0.25rem; }
+    top: 2.64rem;
+    left: 1.25rem;
+    padding: 0 2rem; }
     .main-nav.left a {
       margin-left: none;
       width: 1.25rem;
@@ -7344,11 +7388,35 @@ a {
       background-size: cover; }
   .main-nav.right {
     position: fixed;
-    top: 1.44rem;
-    right: 3.2rem; }
+    top: 2.44rem;
+    right: 4.2rem; }
     .main-nav.right .nav-main-item {
       margin-left: 1.2rem;
       list-style: none; }
+
+.single-post nav {
+  display: none;
+  position: fixed;
+  top: 3rem;
+  height: 2.625rem;
+  background-color: #324054; }
+  .single-post nav .main-nav.left {
+    position: relative; }
+  .single-post nav .main-nav.brand {
+    position: relative; }
+  .single-post nav .main-nav.right {
+    position: relative; }
+
+.single-post .featured-image {
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.single-post .article-content {
+  border-bottom: 1px solid #D6D9DD; }
+  .single-post .article-content .article-h1 {
+    padding-bottom: 1.125rem; }
 
 .footer {
   border-top: 1px solid #D6D9DD; }
@@ -7358,13 +7426,13 @@ a {
       font-family: "Space Mono", mono;
       font-size: 0.875rem;
       margin-right: 2.4rem;
+      padding: .4rem .4rem;
       display: inline-block;
       -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
               transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
-      .footer .social a:hover {
-        padding-right: 1.4rem; }
   .footer .easter {
-    right: 1rem;
+    right: 2rem;
+    line-height: 2rem;
     position: absolute;
     text-align: right; }
 
@@ -7376,12 +7444,23 @@ a {
   display: block; }
   .tease .h3 {
     padding-bottom: .5rem; }
+  .tease .h5 {
+    line-height: 1.44rem; }
   .tease p {
     padding-bottom: 1.25rem;
     -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
             transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
   .tease .read-link {
-    -webkit-transition: ease-in-out;
-            transition: ease-in-out; }
+    font-size: 1.1rem;
+    margin-left: .22rem;
+    color: #738bac;
+    opacity: 0.5;
+    position: relative;
+    line-height: 1.44rem;
+    border-bottom: 2px solid #D6D9DD;
+    -webkit-transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29);
+            transition: all 0.2s cubic-bezier(0.58, 0.18, 0.45, 1.29); }
     .tease .read-link:hover {
-      background-color: yellow; }
+      opacity: 1;
+      color: #324054;
+      border-bottom: 2px solid #EF3054; }
